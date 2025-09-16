@@ -65,9 +65,10 @@ for item in tabela.index:
     pyautogui.write(custo)
     pyautogui.press("tab")
     
-    if obs != "nan": # se o campo 'obs' voltar 'nan' (que é um campo vazio), não o preenche com 'nan'
+    if obs != "nan": # se o campo 'obs' voltar 'nan' (campo vazio), não o preenche com 'nan'
         pyautogui.write(obs)
     pyautogui.press("enter")
     pyautogui.press("enter")
     
+
     time.sleep(1)
